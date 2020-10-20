@@ -1,0 +1,8 @@
+{
+    "serviceName" : "private-static-content",
+    "frontendBucket" : "web",
+    "permissionsBucket" : "permissions",
+    "permissionsFile" : "permissions.csv",
+    "frontendTTL" : 0,
+    "signedCookieTTL" : 3600
+}
