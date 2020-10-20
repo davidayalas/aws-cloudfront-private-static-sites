@@ -5,10 +5,10 @@ module.exports = function(){
 		return;
 	}
 
-	if(!process.env.JWT_SECRET){
+	/*if(!process.env.JWT_SECRET){
 		console.log("JWT_SECRET cert can't be empty");
 		return;
-	}
+	}*/
 
 	if(!process.env.ALLOWED_DOMAINS && !process.env.ALLOWED_HOSTS_PATTERNS){
 		console.log("ALLOWED_DOMAINS or ALLOWED_HOSTS_PATTERNS can't be empty");
