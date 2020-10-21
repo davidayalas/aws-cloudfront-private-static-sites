@@ -101,7 +101,7 @@
         <div class="type-1">
             <div>
                 <a href="#" id="login" class="btn btn-2">
-                    <span class="txt">Entra</span>
+                    <span class="txt">Login</span>
                     <span class="round"><i class="fa fa-chevron-right"></i></span>
                 </a>
             </div>
@@ -112,8 +112,10 @@
         </div>    
     </body>
 
+    <script src="assets/endpoint.js"></script>
     <script>
-        const logindomain = "https://xxxxxxxxxxx.cloudfront.net"
+
+        const endpoint = "https://cloudfrontendpoint";
 
         function ready(fn) {
             if (document.readyState != 'loading'){
@@ -142,7 +144,7 @@
         ready(function(){
             const login = document.getElementById("login");
             login.addEventListener("click", function(){
-                window.location = logindomain+"/demo/setCFCookies";  
+                window.location = endpoint+"/demo/setCFCookies";  
                 return false;
             });
 
@@ -154,7 +156,6 @@
                 alert("Not authorized");
             }
         }); 
-
     </script>
 
     </html>

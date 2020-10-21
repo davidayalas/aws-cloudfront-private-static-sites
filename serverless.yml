@@ -169,13 +169,12 @@ resources:
         CloudFrontOriginAccessIdentityConfig:
           Comment: "access-identity-for-${self:custom.serviceName}"
 
-    Outputs:
-      CloudFrontDNS:
-        Description: dns from distribution
-        Value: !GetAtt CloudFrontDistribution.DomainName
-        Export:
-          Name: CloudFrontDNS
-
+  Outputs:
+    CloudFrontDNS:
+      Description: dns from distribution
+      Value: !GetAtt CloudFrontDistribution.DomainName
+      Export:
+        Name: CloudFrontDNS
 
 functions:
   login:

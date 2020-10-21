@@ -32,7 +32,7 @@
 
 The [auth page](web/auth.html) is a Cloudfront error page. When cookies aren't present, Cloudfront shows this page to the user and then, login flow is triggered.
 
-In this page you have to setup your cloudfront distribution domain name.
+In this page you have to setup your cloudfront distribution domain name (first-deploy.sh does it for you).
 
 Once done, you can sync only s3
 
