@@ -174,7 +174,7 @@ resources:
       Description: dns from distribution
       Value: !GetAtt CloudFrontDistribution.DomainName
       Export:
-        Name: CloudFrontDNS
+        Name: CloudFrontDNS-${self:custom.serviceName}
 
 functions:
   login:
