@@ -100,7 +100,7 @@
 
         <div class="type-1">
             <div>
-                <a href="#" id="login" class="btn btn-2">
+                <a href="https://cloudfrontendpoint/demo/setCFCookies" id="login" class="btn btn-2">
                     <span class="txt">Login</span>
                     <span class="round"><i class="fa fa-chevron-right"></i></span>
                 </a>
@@ -114,8 +114,6 @@
 
     <script>
 
-        const endpoint = "https://cloudfrontendpoint";
-
         function ready(fn) {
             if (document.readyState != 'loading'){
                 fn();
@@ -123,7 +121,6 @@
                 document.addEventListener('DOMContentLoaded', fn);
             }
         }
-
 
         function readCookie(name) {
             const nameEQ = name + "=";
@@ -141,12 +138,6 @@
         }
 
         ready(function(){
-            const login = document.getElementById("login");
-            login.addEventListener("click", function(){
-                window.location = endpoint+"/demo/setCFCookies";  
-                return false;
-            });
-
             if(readCookie("saml-logged")==='1' && readCookie("saml-authorized")==='1'){
                 document.cookie = "saml-logged= ; Max-Age = -1"
                 document.cookie = "saml-authorized= ; Max-Age = -1"
